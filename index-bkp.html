@@ -1,0 +1,55 @@
+<style>
+    .scroll-container {
+        height: 400px;
+        overflow-y: scroll;
+        border: 1px solid #ccc;
+        position: relative;
+    }
+    .custom-section {
+        height: 300px;
+        padding: 20px;
+        border-bottom: 1px solid #eee;
+    }
+    .active {
+        background-color: #c8e6c9;
+    }
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const sections = document.querySelectorAll('.section');
+        const navLinks = document.querySelectorAll('#nav a');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${entry.target.id}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, {
+            root: document.querySelector('#scroll-area'),
+            threshold: 0.6
+        });
+
+        sections.forEach(section => observer.observe(section));
+    });
+
+</script>
+
+<!-- Navegación -->
+<ul id="nav">
+    <li><a href="#sec1">Sección 1</a></li>
+    <li><a href="#sec2">Sección 2</a></li>
+    <li><a href="#sec3">Sección 3</a></li>
+</ul>
+
+<!-- Contenedor con scroll -->
+<div class="scroll-container" id="scroll-area">
+    <div id="sec1" class="section">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, commodi consequuntur distinctio eaque est expedita harum incidunt, laboriosam minus molestias possimus quaerat quam quo reiciendis reprehenderit sit tempora totam voluptatum! </div>
+    <div id="sec2" class="section">Contenido 2</div>
+    <div id="sec3" class="section">Contenido 3</div>
+</div>

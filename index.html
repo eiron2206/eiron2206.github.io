@@ -3,42 +3,278 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <title>Mi Portafolio A</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/materialize/css/materialize.css">
+    <script src="assets/materialize/js/materialize.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenido a mi portafolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
+        <nav class="nav-custom">
+            <div class="nav-wrapper">
+                <div class="brand-logo">
+                    <div class="image-container">
+                        <img class="logo-image" src="assets/images/cv-logo-2.png">
+                    </div>
+                    <span class="logo-description">
+                        Professional Summary
+                    </span>
+                </div>
+            </div>
         </nav>
     </header>
-    
-    <section id="about">
-        <h2>Sobre mí</h2>
-        <p>Soy un desarrollador web apasionado por crear soluciones innovadoras.</p>
-    </section>
-    
-    <section id="projects">
-        <h2>Proyectos</h2>
-        <ul>
-            <li><a href="https://github.com/username/proyecto1">Proyecto 1</a></li>
-            <li><a href="https://github.com/username/proyecto2">Proyecto 2</a></li>
-            <li><a href="https://github.com/username/proyecto3">Proyecto 3</a></li>
-        </ul>
-    </section>
-    
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>Puedes contactarme a través de <a href="mailto:miemail@example.com">mi correo electrónico</a>.</p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Mi Portafolio</p>
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="assets/images/parallax2.png" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <div id="profile" class="card">
+            <div class="card-image">
+                <img class="responsive-img" src="assets/images/RickWithAGun.jpg">
+                <div class="card-title profile-name">
+                    <span>Aarón Ortiz Gómez</span>
+                    <span>Java Developer</span>
+                </div>
+            </div>
+            <div class="card-tabs">
+                <ul class="tabs tabs-fixed-width">
+                    <li class="tab"><a class="active" href="#about-myself">About Myself</a></li>
+                    <li class="tab"><a href="#professional-experience">Work Experience</a></li>
+                    <li class="tab"><a href="#skills">Key Skills</a></li>
+                    <li class="tab"><a href="#education">Education</a></li>
+                </ul>
+            </div>
+            <div class="tabs-container">
+                <div id="about-myself" class="container">
+                    <div class="row scroll-container">
+                        <div class="col s12">
+                            <div class="section center">
+                                <h5 class="center">Summary</h5>
+                                <p>
+                                    Hi, my name is Aarón Ortiz, I’m a Java developer with over 7 years of experience in backend
+                                    development, with a strong focus on web applications, e-commerce platforms, microservices, and API
+                                    design. I also have solid experience with frontend technologies, allowing me to contribute across
+                                    the full stack when needed. I’ve been actively involved in migrating legacy systems to the latest
+                                    versions of Java and Spring Boot. I follow best practices and code quality standards, and I enjoy
+                                    working in collaborative, team-oriented environments.
+                                </p>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="section center">
+                                <h5 class="center">Soft Skills</h5>
+                                <ul class="custom-soft-skill-list">
+                                    <li>Analytical</li>
+                                    <li>Autodidact</li>
+                                    <li>Responsible</li>
+                                    <li>Teamwork</li>
+                                    <li>Communication</li>
+                                    <li>Discipline</li>
+                                </ul>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="section center">
+                                <h5 class="center">Languages</h5>
+                                <ul class="custom-soft-skill-list">
+                                    <li>Spanish Native</li>
+                                    <li>English Intermediate</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="professional-experience" class="container">
+                    <div class="row scroll-container">
+                        <div class="col s12">
+                            <ul class="collapsible">
+                                <li class="active">
+                                    <div class="collapsible-header"><i class="material-icons">work</i>Motivus</div>
+                                    <div class="collapsible-body">
+                                        <h4>
+                                            Analyst Programmer/Java Developer
+                                        </h4>
+                                        <h6>2021 -Actual date</h6>
+                                        <p>
+                                            Over the past four years, I have actively contributed to the design,enhancement, and deployment of multiple APIs and microservices, with astrong focus on scalability, performance, and system reliability. My workinvolved integrating services with Oracle DB, MongoDB, external gateways,and Kafka, as well as managing full REST operations. I developed proof-of-concept solutions using AWS, optimized code performance, andimplemented monitoring with Splunk. Additionally, I supported QA andproduction environments and fostered collaboration through workshops andcode reviews within cross-functional teams.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">work</i>Sacti</div>
+                                    <div class="collapsible-body">
+                                        <h4>
+                                            Technical Lead/Java
+                                        </h4>
+                                        <h6>2018 - 2021</h6>
+                                        <p>
+                                            Led the development of over four e-commerce platforms, primarily usingSAP Hybris. As project team leader, I was responsible for enhancing andrefactoring existing sites, implementing new features with Spring MVC, anddeveloping dynamic and static landing pages aligned with UX/UI guidelines.I also created components integrating backend and frontend functionalities,automated data uploads via custom scripts, and improved performance toreduce response times and enhance user experience. Additionally, Iimplemented monitoring and logging solutions using Kibana, including alertsand custom dashboards.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">work</i>ITrends</div>
+                                    <div class="collapsible-body">
+                                        <h4>
+                                            Web Developer
+                                        </h4>
+                                        <h6>February - September 2018</h6>
+                                        <p>
+                                            Developed user-facing components such as address registration forms withgeolocation integration, login interfaces, and interactive dashboards.Participated in the development of mobile applications using hybridframeworks.Technologies: HTML, CSS (Bootstrap, Materialize), SCSS, JavaScript (JQuery,TypeScript), MySQL.Frameworks: Laravel, CodeIgniter, Ionic, Xamarin, Vue.js, and WordPress.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="skills" class="container">
+                    <div class="row scroll-container">
+                        <div class="col s12">
+                            <div class="divider"></div>
+                            <div class="section">
+                                <h5>Backend</h5>
+                                <ul class="custom-skill-list">
+                                    <li>Java</li>
+                                    <li>Spring Boot</li>
+                                    <li>Spring MVC</li>
+                                    <li>Spring Security</li>
+                                    <li>Spring Data JPA</li>
+                                    <li>Spring Cloud</li>
+                                    <li>JUnit & Mockito</li>
+                                    <li>Maven</li>
+                                </ul>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="section">
+                                <h5>Frontend</h5>
+                                <ul class="custom-skill-list">
+                                    <li>Html</li>
+                                    <li>Css</li>
+                                    <li>Javascript</li>
+                                    <li>JQuery</li>
+                                    <li>Bootstrap</li>
+                                    <li>Materialize</li>
+                                    <li>Responsive Design</li>
+                                </ul>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="section">
+                                <h5>Database</h5>
+                                <ul class="custom-skill-list">
+                                    <li>SQL</li>
+                                    <li>MySql</li>
+                                    <li>MongoDB</li>
+                                    <li>PostgresSQL</li>
+                                </ul>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="section">
+                                <h5>DevOps & CI/CD & CVS</h5>
+                                <ul class="custom-skill-list">
+                                    <li>Jenkins</li>
+                                    <li>Docker</li>
+                                    <li>Git</li>
+                                    <li>BitBucket</li>
+                                    <li>Github</li>
+                                    <li>SubVersion</li>
+                                </ul>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="section">
+                                <h5>Cloud</h5>
+                                <ul class="custom-skill-list">
+                                    <li>Openshift</li>
+                                    <li>AWS Services</li>
+                                </ul>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="section">
+                                <h5>Monitoring</h5>
+                                <ul class="custom-skill-list">
+                                    <li>Splunk</li>
+                                    <li>New Relic</li>
+                                    <li>Kibana</li>
+                                    <li>Sumo Logic</li>
+                                </ul>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="section">
+                                <h5>Methodologies & Tools</h5>
+                                <ul class="custom-skill-list">
+                                    <li>Scrum</li>
+                                    <li>Jira</li>
+                                    <li>Confluence</li>
+                                </ul>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="section">
+                                <h5>Other Tools</h5>
+                                <ul class="custom-skill-list">
+                                    <li>IntelliJ</li>
+                                    <li>Maven</li>
+                                    <li>Mongo Compass</li>
+                                    <li>SOAP UI</li>
+                                    <li>Postman</li>
+                                    <li>Insomnia</li>
+                                    <li>Visual Studio</li>
+                                    <li>Selenium</li>
+                                    <li>SAP Hybris</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="education" class="container">
+                    <div class="row scroll-container">
+                        <div class="col s12 m4">
+                            <div class="card medium">
+                                <div class="card-image">
+                                    <img src="assets/images/isologo_ITC.png">
+                                    <span class="card-title profile-name" style="font-weight: bold">
+                                        Instituto Tecnológico De Campeche
+                                    </span>
+                                </div>
+                                <div class="card-content">
+                                    <span style="font-weight: bold; display: block">Systems Computational Engineering</span>
+                                    <span>January 2012 - December 2017</span>
+                                </div>
+                                <div class="card-action">
+                                    <a href="https://itcampeche.edu.mx/" target="_blank">Página web</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Contact Information</h5>
+                    <p class="grey-text text-lighten-4">You can find my contact information, feel free to send me an email and message</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul class="custom-footer-list">
+                        <li><a class="grey-text text-lighten-3"><i class="custom-icons tiny material-icons">email</i>aaron.ortiz.mail@gmail.com</a></li>
+                        <li><a class="grey-text text-lighten-3"><i class="custom-icons tiny material-icons">call</i>9811064165</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://wa.me/+529811064165"><i class="custom-icons fab fa-whatsapp"></i>9811064165</a></li>
+                        <li><a class="grey-text text-lighten-3" href="www.linkedin.com/in/aarón-ortiz-1290a2207"><i class="custom-icons fab fa-linkedin"></i>LinkdIn</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/eiron2206"><i class="custom-icons fab fa-github"></i>Github</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2025 Design and built with Materialize by <span style="font-weight: bold">Aarón Ortiz Gómez</span>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

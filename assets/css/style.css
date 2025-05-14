@@ -1,0 +1,151 @@
+#profile {
+    bottom: 50px;
+}
+
+.nav-custom {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.profile-name {
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 0px;
+    width: 100%;
+    text-align: center;
+    text-justify: auto;
+}
+
+.profile-name span {
+    display: block;
+}
+
+.card .card-image .card-title {
+    padding: 5px;
+}
+
+body {
+    background: #f5f5f5 !important;
+}
+
+.tabs-container {
+    height: 500px !important;
+}
+
+.tabs-content .carousel .carousel-slider {
+    height: 500px !important;
+}
+
+.nav-custom, .page-footer {
+    background-color: #607d8b !important;
+}
+
+.tabs .tab a {
+    color: #607d8b;
+    font-weight: bold;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+    color: #4db6ac;
+    font-weight: bold;
+}
+
+.tabs .indicator {
+    background-color: #4db6ac;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background-color: rgba(77, 182, 172, 0.1);
+    outline: none;
+}
+
+.carousel.carousel-slider {
+    height: 500px !important;
+}
+
+/*Custom Styles*/
+
+.scroll-container {
+    overflow-y: auto;
+    height: 500px;
+}
+
+.custom-skill-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.custom-skill-list li::before {
+    content: "❋";
+    margin-right: 0.5em;
+    color: #4db6ac;
+}
+
+.custom-skill-list > li {
+    display: inline-block;
+    margin-left: 1.5em;
+}
+
+.custom-soft-skill-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.custom-soft-skill-list li::before {
+    content: "✅";
+    margin-right: 0.5em;
+    color: #4db6ac;
+}
+
+.custom-soft-skill-list > li {
+    display: inline-block;
+    margin-left: 1.5em;
+}
+
+.custom-icons {
+    margin-right: 5px;
+}
+.image-container {
+    width: 60px;
+    display: inline-block;
+}
+.logo-image {
+    width: 100%;
+}
+
+.brand-logo {
+    width: 100%;
+}
+
+.logo-description {
+    position: absolute;
+}
+/* Estilos base: Escritorios grandes (mayores a 1200px) */
+/* Laptops: 993px - 1200px */
+@media (max-width: 1200px) {
+
+}
+
+/* Tablets en horizontal: 769px - 992px */
+@media (max-width: 992px) {
+
+}
+
+/* Tablets en vertical: 601px - 768px */
+@media (max-width: 768px) {
+
+}
+
+/* Teléfonos grandes: hasta 600px */
+@media (max-width: 600px) {
+}
+
+/* Teléfonos pequeños: hasta 480px */
+@media (max-width: 480px) {
+
+}
+
